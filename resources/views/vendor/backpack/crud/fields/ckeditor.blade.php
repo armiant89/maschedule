@@ -26,8 +26,8 @@
 
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
-        <script src="{{ asset('vendor/backpack/ckeditor/ckeditor.js') }}"></script>
-        <script src="{{ asset('vendor/backpack/ckeditor/adapters/jquery.js') }}"></script>
+        <script src="{{ secure_asset('vendor/backpack/ckeditor/ckeditor.js') }}"></script>
+        <script src="{{ secure_asset('vendor/backpack/ckeditor/adapters/jquery.js') }}"></script>
     @endpush
 
 @endif

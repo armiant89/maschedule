@@ -36,11 +36,11 @@
 
 
 @section('after_styles')
-  <link rel="stylesheet" href="{{ asset('vendor/backpack/crud/css/crud.css') }}">
-  <link rel="stylesheet" href="{{ asset('vendor/backpack/crud/css/revisions.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('vendor/backpack/crud/css/crud.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('vendor/backpack/crud/css/revisions.css') }}">
 @endsection
 
 @section('after_scripts')
-  <script src="{{ asset('vendor/backpack/crud/js/crud.js') }}"></script>
-  <script src="{{ asset('vendor/backpack/crud/js/revisions.js') }}"></script>
+  <script src="{{ secure_asset('vendor/backpack/crud/js/crud.js') }}"></script>
+  <script src="{{ secure_asset('vendor/backpack/crud/js/revisions.js') }}"></script>
 @endsection

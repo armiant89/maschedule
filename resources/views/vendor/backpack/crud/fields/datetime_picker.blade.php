@@ -44,7 +44,7 @@ if (isset($field['value']) && ( $field['value'] instanceof \Carbon\Carbon || $fi
 
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
-    <script src="{{ asset('vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ secure_asset('vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
     <script type="text/javascript" src="{{ secure_asset('vendor/adminlte/plugins/daterangepicker/moment.min.js') }}"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
     @if ($field_language !== 'en')

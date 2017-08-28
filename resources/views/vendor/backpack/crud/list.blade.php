@@ -122,10 +122,10 @@
 
 @section('after_styles')
   <!-- DATA TABLES -->
-  <link href="{{ asset('vendor/adminlte/plugins/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="{{ asset('vendor/backpack/crud/css/crud.css') }}">
-  <link rel="stylesheet" href="{{ asset('vendor/backpack/crud/css/form.css') }}">
-  <link rel="stylesheet" href="{{ asset('vendor/backpack/crud/css/list.css') }}">
+  <link href="{{ secure_asset('vendor/adminlte/plugins/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{{ secure_asset('vendor/backpack/crud/css/crud.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('vendor/backpack/crud/css/form.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('vendor/backpack/crud/css/list.css') }}">
 
   <!-- CRUD LIST CONTENT - crud_list_styles stack -->
   @stack('crud_list_styles')
