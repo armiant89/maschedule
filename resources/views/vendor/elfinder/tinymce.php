@@ -11,20 +11,20 @@
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
     <!-- elFinder CSS (REQUIRED) -->
-    <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/elfinder.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= secure_asset($dir.'/css/elfinder.min.css') ?>">
     <!-- <link rel="stylesheet" type="text/css" href="<?= asset($dir.'/css/theme.css') ?>"> -->
-    <link rel="stylesheet" type="text/css" href="<?= asset('vendor/backpack/elfinder/elfinder.backpack.theme.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= secure_asset('vendor/backpack/elfinder/elfinder.backpack.theme.css') ?>">
 
     <!-- elFinder JS (REQUIRED) -->
-    <script src="<?= asset($dir.'/js/elfinder.min.js') ?>"></script>
+    <script src="<?= secure_asset($dir.'/js/elfinder.min.js') ?>"></script>
 
     <!-- TinyMCE Popup class (REQUIRED) -->
-    <script type="text/javascript" src="<?= asset($dir.'/js/tiny_mce_popup.js') ?>"></script>
+    <script type="text/javascript" src="<?= secure_asset($dir.'/js/tiny_mce_popup.js') ?>"></script>
 
     <?php if ($locale) {
     ?>
         <!-- elFinder translation (OPTIONAL) -->
-        <script src="<?= asset($dir."/js/i18n/elfinder.$locale.js") ?>"></script>
+        <script src="<?= secure_asset($dir."/js/i18n/elfinder.$locale.js") ?>"></script>
     <?php
 } ?>
 

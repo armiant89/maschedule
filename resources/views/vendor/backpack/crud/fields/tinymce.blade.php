@@ -27,7 +27,7 @@
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
     <!-- include tinymce js-->
-    <script src="{{ asset('vendor/backpack/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ secure_asset('vendor/backpack/tinymce/tinymce.min.js') }}"></script>
     {{-- <script src="{{ asset(config('backpack.base.route_prefix').'/js/vendor/tinymce/jquery.tinymce.min.js') }}"></script> --}}
 
     <script type="text/javascript">
