@@ -47,7 +47,7 @@
 
 @push('crud_list_scripts')
 	<!-- include select2 js-->
-	<script type="text/javascript" src="{{ asset('vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('vendor/adminlte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
   <script>
 		jQuery(document).ready(function($) {
 			var dateInput = $('#datepicker-{{ str_slug($filter->name) }}').datepicker({
