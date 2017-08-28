@@ -13,6 +13,7 @@ class PerformancesController extends CrudController
         $this->crud->setModel("App\Models\Performance");
         $this->crud->setRoute("admin/performances");
         $this->crud->setEntityNameStrings(trans('backpack_custom.model_performance_sn'), trans('backpack_custom.model_performance_pl'));
+        $this->crud->orderBy('performance_date');
 
         $this->crud->addColumn([
             'label' => trans('backpack_custom.period'),
