@@ -12,14 +12,11 @@ return [
     |
     */
 
-    'defaults' => array(
-        'supportsCredentials' => false,
-        'allowedOrigins' => array('*'),
-        'allowedHeaders' => array('*'),
-        'allowedMethods' => array('*'),
-        'maxAge' => 3600,
-        'hosts' => array()
-    ),
-    'paths' => array(),
+    'supportsCredentials' => false,
+    'allowedOrigins' => ['*'],
+    'allowedHeaders' => ['*'],
+    'allowedMethods' => ['*'],
+    'exposedHeaders' => [],
+    'maxAge' => 0,
 
 ];
