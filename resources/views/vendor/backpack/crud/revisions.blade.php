@@ -6,8 +6,8 @@
       <span>{{ ucfirst($crud->entity_name) }}</span> {{ trans('backpack::crud.revisions') }}
     </h1>
     <ol class="breadcrumb">
-      <li><a href="{{ url(config('backpack.base.route_prefix'),'dashboard') }}">{{ trans('backpack::crud.admin') }}</a></li>
-      <li><a href="{{ url($crud->route) }}" class="text-capitalize">{{ $crud->entity_name_plural }}</a></li>
+      <li><a href="{{ secure_url(config('backpack.base.route_prefix'),'dashboard') }}">{{ trans('backpack::crud.admin') }}</a></li>
+      <li><a href="{{ secure_url($crud->route) }}" class="text-capitalize">{{ $crud->entity_name_plural }}</a></li>
       <li class="active">{{ trans('backpack::crud.revisions') }}</li>
     </ol>
   </section>
@@ -18,7 +18,7 @@
   <div class="col-md-10 col-md-offset-1">
     <!-- Default box -->
     @if ($crud->hasAccess('list'))
-      <a href="{{ url($crud->route) }}"><i class="fa fa-angle-double-left"></i> {{ trans('backpack::crud.back_to_all') }} <span>{{ $crud->entity_name_plural }}</span></a><br><br>
+      <a href="{{ secure_url($crud->route) }}"><i class="fa fa-angle-double-left"></i> {{ trans('backpack::crud.back_to_all') }} <span>{{ $crud->entity_name_plural }}</span></a><br><br>
     @endif
 
     @if(!count($revisions))

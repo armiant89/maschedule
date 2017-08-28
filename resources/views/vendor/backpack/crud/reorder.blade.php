@@ -7,8 +7,8 @@
         <small>{{ trans('backpack::crud.all') }} <span>{{ $crud->entity_name_plural }}</span> {{ trans('backpack::crud.in_the_database') }}.</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ url(config('backpack.base.route_prefix'), 'dashboard') }}">{{ trans('backpack::crud.admin') }}</a></li>
-        <li><a href="{{ url($crud->route) }}" class="text-capitalize">{{ $crud->entity_name_plural }}</a></li>
+        <li><a href="{{ secure_url(config('backpack.base.route_prefix'), 'dashboard') }}">{{ trans('backpack::crud.admin') }}</a></li>
+        <li><a href="{{ secure_url($crud->route) }}" class="text-capitalize">{{ $crud->entity_name_plural }}</a></li>
         <li class="active">{{ trans('backpack::crud.reorder') }}</li>
     </ol>
 </section>
@@ -55,7 +55,7 @@ function tree_element($entry, $key, $all_entries, $crud)
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
     @if ($crud->hasAccess('list'))
-        <a href="{{ url($crud->route) }}"><i class="fa fa-angle-double-left"></i> {{ trans('backpack::crud.back_to_all') }} <span>{{ $crud->entity_name_plural }}</span></a><br><br>
+        <a href="{{ secure_url($crud->route) }}"><i class="fa fa-angle-double-left"></i> {{ trans('backpack::crud.back_to_all') }} <span>{{ $crud->entity_name_plural }}</span></a><br><br>
     @endif
 
         <!-- Default box -->
@@ -100,7 +100,7 @@ function tree_element($entry, $key, $all_entries, $crud)
 <script src="{{ secure_asset('vendor/backpack/crud/js/crud.js') }}"></script>
 <script src="{{ secure_asset('vendor/backpack/crud/js/reorder.js') }}"></script>
 <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" type="text/javascript"></script>
-<script src="{{ url('vendor/backpack/nestedSortable/jquery.mjs.nestedSortable2.js') }}" type="text/javascript"></script>
+<script src="{{ secure_url('vendor/backpack/nestedSortable/jquery.mjs.nestedSortable2.js') }}" type="text/javascript"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {

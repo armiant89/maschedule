@@ -40,7 +40,7 @@
 
     function elFinderBrowser (field_name, url, type, win) {
       tinymce.activeEditor.windowManager.open({
-        file: '{{ url(config('backpack.base.route_prefix').'/elfinder/tinymce4') }}',// use an absolute path!
+        file: '{{ secure_url(config('backpack.base.route_prefix').'/elfinder/tinymce4') }}',// use an absolute path!
         title: 'elFinder 2.0',
         width: 900,
         height: 450,

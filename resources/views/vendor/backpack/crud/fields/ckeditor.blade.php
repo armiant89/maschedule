@@ -37,7 +37,7 @@
 <script>
     jQuery(document).ready(function($) {
         $('textarea[name="{{ $field['name'] }}"].ckeditor').ckeditor({
-            "filebrowserBrowseUrl": "{{ url(config('backpack.base.route_prefix').'/elfinder/ckeditor') }}",
+            "filebrowserBrowseUrl": "{{ secure_url(config('backpack.base.route_prefix').'/elfinder/ckeditor') }}",
             "extraPlugins" : '{{ isset($field['extra_plugins']) ? implode(',', $field['extra_plugins']) : 'oembed,widget' }}'
         });
     });

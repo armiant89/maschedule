@@ -6,7 +6,7 @@
             {{ trans('backpack_custom.cities') }}
         </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ url(config('backpack.base.route_prefix', 'admin')) }}">{{ config('backpack.base.project_name') }}</a></li>
+            <li><a href="{{ secure_url(config('backpack.base.route_prefix', 'admin')) }}">{{ config('backpack.base.project_name') }}</a></li>
             <li class="active">{{ trans('backpack_custom.cities') }}</li>
         </ol>
     </section>
