@@ -189,7 +189,8 @@ return [
          */
         Yajra\Datatables\DatatablesServiceProvider::class,
 
-        Orangehill\Iseed\IseedServiceProvider::class
+        Orangehill\Iseed\IseedServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
     ],
 
     /*
