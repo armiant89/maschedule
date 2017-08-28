@@ -40,4 +40,8 @@ $(document).ready(function(){
    $('.home-subtitle').click(function() {
        $('.home-info').toggle();
    })
+
+    $('.counter').click(function() {
+        $('.home-info').toggle();
+    })
 });
