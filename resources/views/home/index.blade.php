@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.15/r-2.1.1/datatables.min.css"/>
-        <link href="{{asset('css/app.css')}}" rel="stylesheet">
+        <link href="{{secure_asset('css/app.css')}}" rel="stylesheet">
     </head>
     <body>
         <div class="top-right links">
@@ -159,11 +159,11 @@
             </div>
         </div>
 
-        <script src="{{asset('js/app.js')}}"></script>
+        <script src="{{secure_asset('js/app.js')}}"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/r-2.1.1/datatables.min.js"></script>
         <script type="text/javascript" charset="utf8" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
         <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/1.10.15/sorting/datetime-moment.js"></script>
-        <script src="{{asset('js/home.js')}}"></script>
+        <script src="{{secure_asset('js/home.js')}}"></script>
     </body>
 </html>
 
