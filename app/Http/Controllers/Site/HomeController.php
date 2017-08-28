@@ -15,7 +15,7 @@ class HomeController extends Controller
         $now_date = Carbon::now();
         $next_performance_date = null;
         $next_performance = Performance::where('performance_date', '>=', $now_date)
-                                         ->orderBy('performance_date', 'desc')
+                                         ->orderBy('performance_date', 'asc')
                                          ->first();
 
         if(isset($next_performance)) {
