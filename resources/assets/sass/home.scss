@@ -226,6 +226,10 @@ table.dataTable tbody tr {
   width: 50%;
 }
 
+ul.dtr-details {
+  width: 100%;
+}
+
 ul.dtr-details li {
   display: flex;
 }
@@ -252,4 +256,8 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
   content: '-';
   background-color: #222;
+}
+
+table.dataTable>tbody>tr>td.child {
+  padding: 0.5em 1em!important;
 }
