@@ -9,6 +9,7 @@ body {
 
 .main-content {
   margin-top: 100px;
+  cursor: pointer;
 }
 
 .flex-center {
@@ -85,13 +86,16 @@ body {
   border-radius: 30px;
   padding: 13px;
   text-align: center;
-  margin: 0 auto;
   pointer: cursor;
 }
 
 .circle {
   height: 60px;
   width: 60px;
+}
+
+.circle-left {
+  float: right;
 }
 
 .inline-block {
@@ -260,4 +264,14 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 
 table.dataTable>tbody>tr>td.child {
   padding: 0.5em 1em!important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
