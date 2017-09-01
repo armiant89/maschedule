@@ -11,9 +11,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $periods = Period::where('end', '>=', Carbon::now())->get();
         $now_date = Carbon::now();
         $next_performance_date = null;
+        $periods = Period::where('end', '>=', $now_date)->get();
         $next_performance = Performance::where('performance_date', '>=', $now_date)
                                          ->orderBy('performance_date', 'asc')
                                          ->first();

@@ -59,12 +59,17 @@
                                            trans('home.days') }}</div>
                                 </div>
                             @else
+                                <div class="col-xs-12">
+                                    <div class="counter">today</div>
+                                </div>
+                                <!-- Time counter
                                 <div class="col-xs-6">
                                     <div class="counter circle circle-left">{{ $now_date->diff($next_performance_date)->h }}</div>
                                 </div>
                                 <div class="col-xs-6">
                                     <div class="counter circle">{{ $now_date->diff($next_performance_date)->i }}</div>
                                 </div>
+                                -->
                             @endif
                         </div>
                     @endif
