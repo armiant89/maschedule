@@ -24,7 +24,7 @@ class PerformancesController extends CrudController
 
         $this->crud->addColumn([
             'label' => trans('backpack_custom.date'),
-            'type' => 'datetime',
+            'type' => 'date',
             'name' => 'performance_date'
         ]);
 
@@ -40,7 +40,7 @@ class PerformancesController extends CrudController
 
         $this->crud->addField([   // date_picker
             'name' => 'performance_date',
-            'type' => 'datetime_picker',
+            'type' => 'date_picker',
             'label' => trans('backpack_custom.date'),
             // optional:
             'datetime_picker_options' => [

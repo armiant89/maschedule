@@ -32,13 +32,13 @@ class Performance extends Model
     public function getPerformanceClass($next_performance)
     {
         if($next_performance->id == $this->id) {
-            return 'green';
+            return 'next';
         }
 
         if(Carbon::parse($this->performance_date, $this->period->location->city->timezone->name) > Carbon::now()) {
-            return "yellow";
+            return "future";
         } else {
-            return "red";
+            return "done";
         }
     }
 }

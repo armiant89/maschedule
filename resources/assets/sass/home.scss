@@ -5,6 +5,7 @@ body {
   color: #fdfdfd;
   background-color: #222222;
   overflow-x: hidden;
+  padding-bottom: 30px;
 }
 
 .main-content {
@@ -134,20 +135,21 @@ body {
   color: #fdfdfd;
 }
 
-.red {
-  color: darkred;
+.done {
+  color: rgba(181, 179, 163, 0.7);
 }
 
-.yellow {
-  color:yellow;
+.future {
+  color:#fff;
 }
 
-.green {
-  color: green;
+.next {
+  font-weight: 900;
+  color: #fff;
 }
 
 .all-performances {
-  margin-top: 90px;
+  margin-top: 20px;
 }
 
 .schedule-view {
@@ -264,6 +266,16 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 
 table.dataTable>tbody>tr>td.child {
   padding: 0.5em 1em!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+  border-radius: 25px;
+  padding: 5px 13px;
+  color:  #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: linear-gradient(to bottom, rgba(243, 242, 242, 0.52) 0%, rgba(103, 102, 102, 0.52) 100%);
 }
 
 .noselect {
